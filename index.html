@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <input type="search" name="search" id="search">
         <h2>Username</h2>
-        <p>Hi there, username (@username)</p>
+        <p>Hi there,<br> username (@username)</p>
         <div>
             <button type="button">New</button>
             <button type="button">Upload</button>
@@ -18,8 +19,10 @@
         </div>
     </header>
     <nav class="sidebar">
-        <h1>Dashboard</h1>
-        <ul>
+        <div class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <ul class="navigation navlinks">
             <li>Home</li>
             <li>Profile</li>
             <li>Messages</li>
@@ -27,7 +30,7 @@
             <li>Tasks</li>
             <li>Communities</li>
         </ul>
-        <ul>
+        <ul class="settings navlinks">
             <li>Settings</li>
             <li>Support</li>
             <li>Privacy</li>
@@ -36,25 +39,57 @@
     <main>
         <section class="projects">
             <h2>Your projects</h2>
-        </section>
-        <section class="announcements">
-            <h2>Announcements</h2>
-            <div class="announcementList">
-                <div>
-                    <div>
-                        <h3>Announcement</h3>
-                        <p>Announcement text</p>
-                    </div>
+            <div class="projectList">
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
+                </div>
+                <div class="card">
+                    <h3>Project Name</h3>
+                    <p>Paragraph test</p>
                 </div>
             </div>
         </section>
-        <section class="trending">
-            <h2>Trending</h2>
-            <div class="trendingProjects">
-                <div>@username<br>Project</div>
-                <div>@username<br>Project</div>
-                <div>@username<br>Project</div>
-                <div>@username<br>Project</div>
+        <section class="other">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="announcementList">
+                    <div>
+                        <div>
+                            <h3>Announcement</h3>
+                            <p>Announcement text</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="trendingProjects">
+                    <div>@username<br>Project</div>
+                    <div>@username<br>Project</div>
+                    <div>@username<br>Project</div>
+                    <div>@username<br>Project</div>
+                </div>
             </div>
         </section>
     </main>
