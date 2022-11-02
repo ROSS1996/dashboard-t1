@@ -72,8 +72,9 @@ main {
 
 .projectList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 10px
+    grid-template-columns: repeat(auto-fit, minmax(350px, 380px));
+    gap: 10px;
+    justify-content: center;
 }
 
 
@@ -100,7 +101,7 @@ h2 {
 
 .announcementList, .trendingProjects {
     padding: 20px;
-    height: 350px;
+    height: 380px;
     background-color: white;
     border-radius: 8px;
 }
@@ -111,4 +112,49 @@ h2 {
 
 .trending {
     grid-row: 2;
+}
+
+.trendingProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    justify-content: center;
+    align-items: center;
+}
+
+.announcement {
+    padding: 10px;
+}
+
+.announcement:nth-child(-n+2)
+{
+    border-bottom: 1px solid gray;
+}
+
+.announcement p {
+    font-size: 0.94rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trendingProj {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-content: center;
+    padding: 5px;
+}
+
+.trendingProj img {
+    grid-column: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.username {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.trendingProj p {
+    grid-column: 2;
 }
