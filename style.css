@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,50,600,700,800");
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 8fr;
+    font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -18,11 +21,17 @@ nav {
     grid-row: 1 / span 3;
     display: grid;
     grid-template-rows: 10px 1fr 3fr 1fr;
-    gap: 40px;
+    gap: 50px;
+    justify-content: center;
 }
 
 header, main {
     grid-column: 2;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 header {
@@ -51,6 +60,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.navigation li, .settings li {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 #search {
@@ -131,9 +146,14 @@ h2 {
 }
 
 .announcement p {
+    max-height: 80px;
     font-size: 0.94rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: justify;
 }
 
 .trendingProj {
